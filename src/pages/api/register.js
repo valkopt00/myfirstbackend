@@ -14,7 +14,6 @@ async function handler(req, res) {
     return res.status(400).json({ error: "Parâmetros inválidos" });
   }
 
-  let connection2;
   let connection;
   try {
     connection = await pool.getConnection();
